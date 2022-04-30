@@ -51,7 +51,6 @@
           <input type="number" name="number" id="number">
           <input type="submit" value="Flip the Coins!">
         </form>
-  
         <h2>Flip Results:</h2>
           <p id="heads"></p>
           <p id="tails"></p>
@@ -62,7 +61,20 @@
           </ul>
     </div>
     <div id="guess" class="hidden">
-      
+      <h1>Guess the result</h1>
+        <button id="tailsCall">Tails</button>
+          <button id="headsCall">Heads</button>
+  
+          <h2>Results</h2>
+            <p>Call:
+              <img src="./assets/img/coin.png" id="callResult" class="guesscoin"> </img>
+            </p>
+            <p>Flip:
+              <img src="./assets/img/coin.png" id ="flipResult" class="bigcoin"> </img>
+            </p>
+            <p>Result:
+              <strong id="resultText"></strong>
+            </p>      
     </div>
 	<script src="main.js"></script>
   </body>
