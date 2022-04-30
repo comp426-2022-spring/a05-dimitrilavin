@@ -43,7 +43,23 @@
       <img src="assets/img/coin.png" id="singleFlip" class="bigcoin"> 
     </div>
     <div id="multi" class="hidden">
-      
+      <h1>Flip Multiple Coins</h1>
+        <form id="coins">
+          <label for="number">
+            <strong>How many coins do you want to flip?</strong>
+          </label>
+          <input type="number" name="number" id="number">
+          <input type="submit" value="Flip the Coins!">
+        </form>
+  
+        <h2>Flip Results:</h2>
+          <p id="heads"></p>
+          <p id="tails"></p>
+          <ul id="coinlist">
+            <li>
+              <img src="assets/img/coin.png" class="smallcoin"> 
+            </li>
+          </ul>
     </div>
     <div id="guess" class="hidden">
       
