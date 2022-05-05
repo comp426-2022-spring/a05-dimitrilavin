@@ -33,16 +33,48 @@
       <button id="guessnav">Guess the result</button>
     </nav>
     <div id="home">
-      
+      <h1>Welcome to the Coin Flipper</h1>
+      <p>Use the buttons to flip one coin, multiple coins, or guess the results of a coin flip.</p>
     </div>    
     <div id="single" class="hidden">
-      
+      <button id="coin">Flip a Coin</button>
+      <h2>Flip Result:</h2>
+		  <p><span id="result"></span></p>
+      <img src="assets/img/coin.png" id="singleFlip" class="bigcoin"> 
     </div>
     <div id="multi" class="hidden">
-      
+      <h1>Flip Multiple Coins</h1>
+        <form id="coins">
+          <label for="number">
+            <strong>How many coins do you want to flip?</strong>
+          </label>
+          <input type="number" name="number" id="number">
+          <input type="submit" value="Flip the Coins!">
+        </form>
+        <h2>Flip Results:</h2>
+          <p id="heads"></p>
+          <p id="tails"></p>
+          <ul id="coinlist">
+            <li>
+              <img src="assets/img/coin.png" class="smallcoin"> 
+            </li>
+          </ul>
     </div>
     <div id="guess" class="hidden">
-      
+      <h1>Guess the result</h1>
+        <button id="tailsCall">Tails</button>
+          <button id="headsCall">Heads</button>
+  
+          <h2>Results</h2>
+            <p>Call:
+              <img src="./assets/img/coin.png" id="callResult" class="guesscoin"> </img>
+            </p>
+            <p>Flip:
+              <img src="./assets/img/coin.png" id ="flipResult" class="bigcoin"> </img>
+            </p>
+            <p>Result:
+              <strong id="resultText"></strong>
+            </p>      
     </div>
 	<script src="main.js"></script>
   </body>
